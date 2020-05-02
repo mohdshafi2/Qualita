@@ -1,0 +1,41 @@
+.Tabview {
+  ._tab_header {
+    background: transparent linear-gradient(90deg, #032559 0%, #10427B 100%) 0% 0% no-repeat padding-box;
+    padding: 0 0 10px 0;
+    margin-top: -1px;
+
+    ._tab_list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 -15px;
+
+      ._tab_items {
+        .nav {
+          .nav-item {
+            margin: 0 15px;
+
+            .nav-link {
+              font-size: 14px;
+              color: #fff;
+              font-weight: 600;
+              padding: 3px;
+              opacity: 0.5;
+
+              &.active {
+                background-color: transparent;
+                opacity: 1;
+                border-bottom: 2px solid #fff;
+                border-radius: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    padding: 20px 0;
+  }
+}

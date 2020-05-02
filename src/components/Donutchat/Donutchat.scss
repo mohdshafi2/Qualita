@@ -1,0 +1,66 @@
+.Donutchat{
+  width: 50px;
+}
+._pie_chat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  .Piechat {
+    width: 75px;
+    height: 50px;
+    overflow: hidden;
+  }
+  ._pie_indicater {
+    width: 100%;
+    margin-right: 0;
+    @media (min-width: 1200px){
+      margin-right: 20px;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      li {
+        ._pie_head {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          text-align: center;
+          @media (min-width: 1200px){
+            justify-content: center;
+            flex-wrap: nowrap;
+            text-align: left;
+          }
+          svg {
+            margin-top: 3px;
+          }
+          div {
+            margin: 0 4px;
+
+            @media (min-width: 992px){
+              margin: 5px 4px;
+            }
+
+            @media (min-width: 1200px){
+              margin: 0 0 0 10px;
+            }
+            span {
+              font-size: 13px;;
+              color: #3c3c3c;
+              font-weight: 600;
+              display: block;
+            }
+            small {
+              font-size: 13px;;
+              color: #5d5d5d;
+            }
+          }
+        }
+      }
+    }
+  }
+}

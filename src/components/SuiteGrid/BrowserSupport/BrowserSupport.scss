@@ -1,0 +1,30 @@
+.BrowserSupport{}
+
+._bowser {
+  position: relative;
+  &:hover {
+    ._bowser-panel {
+      display: block;
+    }
+  }
+  ._bowser-panel {
+    position: absolute;
+    right: 0;
+    z-index: 9;
+    min-width: 170px;
+    opacity: 1;
+    display: none;
+    .toast-header {
+      border-bottom: 0px;
+      font-weight: bold;
+    }
+    .toast-body {
+      .div-line {
+        color: #ccc;
+        font-weight: 300;
+        margin: 0px 3px;
+        display: inline-block;
+      }
+    }
+  }
+}

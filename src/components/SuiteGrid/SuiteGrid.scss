@@ -1,0 +1,103 @@
+.SuiteGrid {
+  .Gridpanel {
+    margin: 15px 0;
+
+    .gridPanel__group {
+      background-color: #fff;
+      box-shadow: 0 3px 6px #00000029;
+      border-radius: 5px;
+
+      @media all and (-ms-high-contrast:none) {
+        height: 74px;
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      .gridPanel {
+        ._list {
+          &._batch2 {
+            ._items {
+              strong {
+                color: #5d5d5d;
+              }
+
+              small {
+                color: #9F9F9F;
+                font-weight: normal;
+                span:last-child {
+                  color: #000;
+                }
+              }
+            }
+          }
+
+          ._items {
+            strong {
+              color: #9F9F9F;
+            }
+
+            small {
+              font-weight: bold;
+              color: #9F9F9F;
+            }
+          }
+        }
+
+        ._pie_indicater {
+          ._pie_head {
+            flex-direction: column;
+            div {
+              margin: 0;
+            }
+            span {
+              color: #9F9F9F;
+            }
+
+            small {
+              color: #9F9F9F;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+  .alertToasts{
+    position: relative;
+    width: auto;
+  }
+
+  .status-passed {
+    .gridPanel__group {
+      border-left: 3px solid #69BE4B;
+      border-radius: 3px 5px 5px 3px;
+    }
+  }
+
+  .status-failed {
+    .gridPanel__group {
+      border-left: 3px solid #FA912D;
+      border-radius: 3px 5px 5px 3px;
+    }
+  }
+
+  .status-defects {
+    .gridPanel__group {
+      border-left: 3px solid #EA4636;
+      border-radius: 3px 5px 5px 3px;
+    }
+  }
+
+  .status-notexecuted {
+    .gridPanel__group {
+      border-left: 3px solid #7C8B96;
+      border-radius: 3px 5px 5px 3px;
+    }
+  }
+
+  .checkright-icons, .clock-icons {
+    float: right;
+  }
+}

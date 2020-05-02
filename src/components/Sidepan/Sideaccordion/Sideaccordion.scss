@@ -1,0 +1,26 @@
+.Sideaccordion{
+  //.card-header ~ .collapse {
+  //  background-color: #0b2e13;
+  //}
+
+  .accordion {
+    .card {
+      .card-header {
+        background-color: #fff;
+        font-size: 13px;;
+        color: #3C3C3C;
+        font-weight: 600;
+        .accordion-arrow {
+          float: right;
+          transform: rotate(270deg);
+        }
+      }
+        .card-body {
+          p {
+            font-size: 13px;;
+            color: #3C3C3C;
+          }
+        }
+    }
+  }
+}

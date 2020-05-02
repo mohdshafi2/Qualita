@@ -1,0 +1,147 @@
+.Sidepan {
+  .sidepan-button {
+    position: fixed;
+    bottom: 3vh;
+    left: 2vw;
+    background-color: #062C62;
+    width: 47px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 10;
+
+    .draggable-data {
+      position: absolute;
+      top: -12px;
+      left: 13px;
+      cursor: move;
+    }
+  }
+}
+
+.sidepan-view {
+  &.modal {
+    background: transparent !important;
+    right: 0 !important;
+    width: 382px !important;
+    left: inherit !important;
+    .modal-dialog {
+      height: 100vh;
+      margin: 0;
+      position: absolute;
+      right: -200px;
+      transform: none;
+      width: 398px;
+      max-width: inherit;
+      background-color: #fff;
+
+      .modal-content {
+        border: 0 solid;
+        border-radius: 0;
+        margin-top: 46px;
+
+        .modal-header {
+          background-color: #ECF0FF;
+          box-shadow: 0 2px 6px #ccc;
+          border-bottom: 0 solid;
+          padding: 12px;
+          border-radius: 0;
+          position: fixed;
+          width: 382px;
+          z-index: 2;
+          top: 0;
+
+          .close {
+            padding: 10px 15px;
+
+            span {
+              font-weight: 300;
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+
+    &.fade {
+      .modal-dialog {
+        transform: none;
+      }
+    }
+
+    &.show {
+      .modal-dialog {
+        transform: none;
+        right: 0;
+        transition: 500ms;
+      }
+    }
+  }
+
+  //pagination css start
+  ._pagination {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+    li {
+      width: 100%;
+
+      &:last-child {
+        float: right;
+        transform: rotate(180deg);
+      }
+
+      p {
+        margin: 0;
+        font-size: 13px;
+        color: #3C3C3C;
+      }
+    }
+  }
+
+  //pagination css end
+
+
+  .card {
+    border-radius: 0;
+    border: 0;
+    box-shadow: 0 1px 6px 0 #ccc;
+    margin: 10px 0;
+
+    .card-body {
+      padding: 10px;
+
+      .card-title {
+        font-size: 13px;;
+        font-weight: 600;
+        color: #3C3C3C;
+        margin-bottom: 4px;
+        line-height: 20px;
+      }
+
+      .card-text {
+        margin: 2px 0;
+        line-height: normal;
+
+        strong {
+          color: #3C3C3C;
+          font-size: 10px;
+          font-weight: normal;
+        }
+
+        small {
+          color: #8A8A8A;
+          font-size: 10px;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.Header {
+  background-color: #fAfbfd;
+
+  ._headerMain {
+    background: transparent linear-gradient(90deg, #032559 0%, #10427B 100%) 0% 0% no-repeat padding-box;
+    color: #fff;
+    padding: 15px 15px 10px 15px;
+
+    ._logo {
+      img {
+        width: 82px;
+        padding-top: 4px;
+      }
+    }
+
+    ._liveStatus {
+      .btn {
+        padding: 5px 12px;
+        border-radius: 4px;
+        font-size: 10px;
+        background-color: #e65f58;
+        border: 0 solid;
+        line-height: 14px;
+        margin-left: 5px;
+      }
+
+      .btn-success {
+        background-color: #69be4b;
+
+        &:before {
+          content: '';
+          border-radius: 3px;
+          background-color: #f2f2f2;
+          width: 6px;
+          height: 6px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 8px;
+        }
+      }
+
+      .usericons {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        margin-left: 15px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

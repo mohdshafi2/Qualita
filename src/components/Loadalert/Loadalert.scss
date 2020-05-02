@@ -1,0 +1,46 @@
+.Loadalert{
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  min-width: 540px;
+  max-width: 540px;
+  ._loadAlertPan {
+    background-color: #0E3F77;
+    padding: 7px 15px;
+    box-shadow: 0 0 4px #000000;
+    color: #fff;
+    font-size: 13px;;
+    display: flex;
+    z-index: 10;
+    cursor: pointer;
+    padding-right: 40px;
+    height: 33px;
+  }
+  p {
+    margin: 0 0 0 15px;
+  }
+  .left {
+    width: 60%;
+    display: flex;
+    div {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .right {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    div {
+      display: flex;
+      margin: 0 15px;
+      align-items: center;
+      p {
+        font-size: 10px;
+      }
+    }
+    .pie-progess {
+      width: 13px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.DatePicker{}
+
+.daterangepickercontainer {
+  width: 230px;
+  .daterangepicker {
+    left: inherit !important;
+    right: 0 !important;
+  }
+  #DateRangePickerChildren {
+    position: relative;
+    input {
+      font-size: 13px;;
+      color: #3C3C3C;
+      font-weight: 600;
+    }
+    &:after {
+      content: '';
+      background-image: url("https://d25tv1xepz39hi.cloudfront.net/2020-02-06/files/e-calender.svg") ;
+      width: 20px;
+      height: 17px;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 8px;
+      top: 6px;
+      color: #0064CD;
+      font-size: 15px;
+    }
+  }
+}
+
+._mydatepick {
+  .container {
+    padding: 0;
+    max-width: initial;
+    width: auto;
+  }
+}
+
+.test123 {
+  background-color: red;
+}
+
+

@@ -1,0 +1,117 @@
+.failureSummery {
+  .modal-content {
+    border-radius: 0.5rem;
+
+    .modal-header {
+      background-color: #10427B;
+      color: white;
+
+      .h4 {
+        font-size: 16px;
+      }
+
+      .close {
+        padding: 0.8rem 1rem;
+        color: white;
+        opacity: 1 !important;
+        text-shadow: none;
+      }
+    }
+
+    .modal-body {
+      max-height: 400px;
+      overflow: auto;
+
+      .card {
+        border: 0;
+        border-radius: 0;
+
+        .card-header {
+          background-color: transparent;
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: 0;
+          color: #212121;
+          margin-bottom: 0;
+          padding: 15px 10px;
+          user-select: none;
+          cursor: pointer;
+
+          .accordion-arrow {
+            .tag {
+              top: 16px;
+            }
+
+            svg {
+              float: right;
+              transform: rotate(-88deg);
+              top: 8px;
+              position: relative;
+              right: 10px;
+            }
+
+            &.arrow-up {
+              svg {
+                transform: rotate(88deg) !important;
+              }
+            }
+          }
+        }
+      }
+
+      .table {
+        font-family: 'Open Sans';
+
+        thead {
+          background: #F5F6FA;
+          font-size: 14px;
+          letter-spacing: 0;
+          opacity: 1;
+
+          th {
+            font-weight: 400;
+            font-size: 14px;
+            font-family: 'Open Sans';
+          }
+        }
+
+        tbody td {
+          font-size: 13px;
+          letter-spacing: 0;
+          color: #3C3C3C;
+          opacity: 1;
+        }
+      }
+
+      .pagination {
+        .page-item {
+          margin-right: 8px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &.active {
+            .page-link {
+              background: #0060C4;
+              opacity: 1;
+              color: white;
+            }
+          }
+
+          .page-link {
+            background: #FFFFFF;
+            border: 1px solid #E8E9EC;
+            border-radius: 4px;
+            user-select: none;
+            text-align: center;
+            font-size: 13px;
+            letter-spacing: 0;
+            color: #4D4F5C;
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.SuiteFilter{
+  ul {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    li {
+      margin: 0 15px;
+    }
+    li._mydatepick {
+      width: 230px;
+      display: inline-block;
+    }
+  }
+}

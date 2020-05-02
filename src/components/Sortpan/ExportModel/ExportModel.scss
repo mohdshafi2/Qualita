@@ -1,0 +1,27 @@
+.ExportModel{}
+
+.dropdown-modalBox {
+  .modal-dialog {
+    margin: auto 0;
+    //float: right;
+    //right: 6%;
+    //top: 30%;
+    height: 100%;
+    max-width: 100%;
+    @media (min-width: 1200px) {
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+    .modal-content {
+      right: 6%;
+      float: right;
+      position: relative;
+      width: 330px;
+      top: 30%;
+
+      @media (min-width: 1200px) {
+        right: 22px;
+      }
+    }
+  }
+}

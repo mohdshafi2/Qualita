@@ -1,0 +1,425 @@
+.Table {
+  section {
+    padding: 35px 0;
+
+    ._tableMain {
+      .table {
+        border-radius: 5px;
+        max-height: calc(100vh - 350px);
+        //overflow: hidden;
+        cursor: pointer;
+
+        thead {
+          background-color: #ecf0ff;         
+
+          tr {
+            th {
+              border-top: 0 solid;
+              border-bottom: 0 solid;
+              border-right: 1px solid #fff;
+              padding: 6px;
+              color: #3c3c3c;
+              font-size: 13px;
+              font-weight: 600;
+              line-height: 17px;
+              vertical-align: middle;
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            &.active {
+              background-color: #fff;
+            }
+
+            &.selected {
+              background-color: #fff;
+              box-shadow: 0 0 6px #00000029;
+              border-left: 2px solid #083066;
+            }
+
+            background-color: #f5f6fa;
+
+            td {
+              border-top: 0 solid;
+              border-bottom: 1px solid #f1f1f3;
+              border-right: 1px solid #fff;
+              color: #3c3c3c;
+              font-size: 13px;
+              font-weight: normal;
+              line-height: 14px;
+              padding: 6px;
+              vertical-align: middle;
+            }
+          }
+
+          //iteration start
+          .iteration {
+            background-color: #f5f6fa;
+
+            .iteration-head {
+              text-align: left;
+
+              p {
+                color: #AAAAAA;
+                margin: 0;
+                font-size: 13px;
+                padding: 0 15px;
+                display: inline-block;
+
+                span {
+                  color: #F7680F;
+                  font-weight: bold;
+                  font-size: 13px;;
+                }
+              }
+            }
+          }
+
+          //iteration ends
+
+          //screenshot start
+          .screenshot-attach {
+            width: 40px;
+            margin: auto;
+            overflow: hidden;
+
+            img {
+              width: 100%;
+            }
+
+            .PreviewModel .preview__pic {
+              margin: 0;
+            }
+          }
+
+          //screenshot end
+        }
+
+        .padding-left {
+          position: relative;
+          padding-left: 0 !important;
+
+          &:before {
+            content: '';
+            width: 1px;
+            height: 100vh;
+            display: inline-block;
+            background-color: #F1F1F3;
+            position: absolute;
+            left: 6px;
+            margin-top: -8px;
+            z-index: 0;
+          }
+        }
+
+        .row-level-1 {
+          .padding-left {
+            padding-left: 0 !important;
+
+            &:before {
+              height: auto;
+            }
+          }
+        }
+
+        .row-level-2 {
+          .padding-left {
+            padding-left: 15px !important;
+          }
+        }
+
+        .row-level-3 {
+          .padding-left {
+            &:before {
+              left: 6px;
+            }
+          }
+
+          .tree-icon {
+            &:before {
+              background-color: transparent;
+            }
+
+            &:after {
+              background-color: transparent;
+            }
+          }
+        }
+
+        .row-level-4 {
+          .padding-left {
+            &:before {
+              left: 21px;
+              height: auto;
+            }
+
+            .tree-icon {
+              &:before {
+                background-color: transparent;
+              }
+
+              &:after {
+                background-color: transparent;
+              }
+            }
+          }
+        }
+
+        .row-level-5 {
+          .padding-left {
+            &:before {
+              left: 51px;
+              height: auto;
+            }
+          }
+
+          .tree-icon {
+            &:before {
+              background-color: transparent;
+            }
+
+            &:after {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+
+      .table2 {
+        thead {
+          tr {
+            th:last-child {
+              text-align: right;
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td:last-child {
+              text-align: right;
+            }
+          }
+        }
+
+        .row-level-2 {
+          .padding-left {
+            padding-left: 0 !important;
+
+            &:before {
+              height: auto;
+            }
+          }
+        }
+
+        .row-level-3 {
+          .padding-left {
+            padding-left: 15px !important;
+          }
+        }
+
+        .row-level-4 {
+          .padding-left {
+            @extend .padding-left;
+            padding-left: 30px !important;
+          }
+        }
+
+        .row-level-5 {
+          .padding-left {
+            @extend .padding-left;
+            padding-left: 45px !important;
+          }
+        }
+
+        .row-level-6 {
+          .padding-left {
+            @extend .padding-left;
+            padding-left: 60px !important;
+          }
+        }
+
+        .row-level-7 {
+          .padding-left {
+            @extend .padding-left;
+            padding-left: 75px !important;
+          }
+        }
+      }
+    }
+  }
+
+  // status icons start
+  .status {
+    .icon-status {
+      font-family: 'icomoon' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+
+      display: flex;
+      justify-content: center;
+
+      &:before {
+      }
+    }
+  }
+
+  .status-passed {
+    @extend .status;
+
+    .icon-status {
+      &:before {
+        content: "\e90d";
+        color: #69be4b;
+      }
+    }
+  }
+
+  .status-failed {
+    @extend .status;
+
+    .icon-status {
+      &:before {
+        content: "\e903";
+        color: #fa912d;
+      }
+    }
+  }
+
+  .status-defects {
+    @extend .status;
+
+    .icon-status {
+      &:before {
+        content: "\e910";
+        color: #ea4636;
+      }
+    }
+  }
+
+  .status-not-executed {
+    @extend .status;
+
+    .icon-status {
+      &:before {
+        content: "\e907";
+        color: #7c8b96;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .status-loading {
+    @extend .status;
+
+    .icon-status {
+      &:before {
+        content: "\e918";
+        color: #4a86e8;
+        -webkit-animation: spin 4s linear infinite; /* Safari */
+        animation: spin 4s linear infinite;
+      }
+    }
+  }
+
+  //status icons ends
+
+  //tree start
+  .tree-expand {
+    .tree-icon {
+      position: relative;
+      margin-right: 10px;
+      display: inline-block;
+      z-index: 3;
+      background-color: transparent;
+
+      &:before {
+        content: '';
+        width: 1px;
+        background-color: #F1F1F3;
+        height: 8px;
+        display: inline-block;
+        position: absolute;
+        top: -7px;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+
+      &:after {
+        content: '';
+        width: 1px;
+        background-color: #F1F1F3;
+        height: 9px;
+        display: inline-block;
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+
+      i {
+        font-family: 'icomoon' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+        display: inline-flex;
+        border: 1px solid #989898;
+        justify-content: center;
+        align-items: center;
+        line-height: 11px;
+        padding: 0;
+        margin: 0;
+        position: relative;
+
+        &:before {
+          content: '+';
+          vertical-align: middle;
+          color: #989898;
+          padding: 1px 2px;
+          margin-top: -2px;
+          width: 10px;
+        }
+      }
+    }
+  }
+
+  .tree-collapse {
+    @extend .tree-expand;
+
+    .tree-icon {
+      i {
+        &:before {
+          content: '-';
+          vertical-align: middle;
+          color: #989898;
+          padding: 1px 3px;
+          margin-top: -2px;
+        }
+      }
+    }
+
+  }
+
+  //tree ends
+
+}
+

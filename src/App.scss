@@ -1,0 +1,63 @@
+@import "~bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,600,600i,700,700i,900,900i|Open+Sans:300,400,400i,600,600i,700,700ii&display=swap');
+
+@import "./fonts/icomoon.css";
+
+.App {
+  font-family: 'Nunito Sans', Open Sans;
+  background-color: #fafbfd;
+  word-break: break-all;
+}
+
+.container {
+  max-width: 98%;
+  @media (min-width: 1200px) {
+    max-width: 1300px;
+  }
+}
+//help class start
+.overflow-none {
+  td {
+    overflow: visible !important;
+  }
+}
+.w-60 {
+  width: 60% !important;
+}
+.grey--bgcolor {
+  background-color: #f5f6fa !important;
+}
+.list-style-none {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+//help class end
+
+//spin start
+.spin-me {
+  -webkit-animation: spin 4s linear infinite; /* Safari */
+  animation: spin 4s linear infinite;
+}
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+//spin end
+
+
+.modal-backdrop {
+  background-color: transparent;
+  width: auto;
+  position: relative;
+}
+.modal-open .modal {
+  background: rgba(0, 0, 0, 0.5);
+}

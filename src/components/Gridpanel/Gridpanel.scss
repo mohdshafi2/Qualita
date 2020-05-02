@@ -1,0 +1,142 @@
+.Gridpanel{
+  margin-top: -25px;
+
+  .gridPan-Bg {
+    background-color: #fff;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    position: relative;
+
+    .gridArrow-collapse {
+      border-radius: 25px;
+      width: 27PX;
+      height: 27px;
+      display: none;
+      background-color: #fff;
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      bottom: -14px;
+      box-shadow: 0 3px 6px #00000029;
+      cursor: pointer;
+
+      svg {
+        display: block !important;
+        margin: 8px auto ;
+      }
+    }
+    .collapse  {
+      display: block;
+    }
+    .gridArrow-collapse[aria-expanded="true"] {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .gridPanel__group {
+    display: flex;
+    flex-wrap: wrap;
+
+    &._batch2 {
+      display: none;
+    }
+
+    @media (min-width: 992px) {
+      flex-wrap: nowrap;
+    }
+
+    .gridPanel {
+      padding: 11.5px 15px;
+      border-bottom: 1px solid #d6d6d6;
+      color: #000;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 100%;
+      @media (min-width: 992px) {
+        border-right: 1px solid #d6d6d6;
+        border-bottom: 0px solid #d6d6d6;
+      }
+      ._list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ._items {
+          strong {
+            color: #4d4f5c;
+            font-size: 13px;;
+            line-height: 24px;
+            font-weight: 700;
+            display: block;
+          }
+          small {
+            color: #5d5d5d;
+            font-size: 13px;
+            line-height: 24px;
+          }
+          svg {
+            margin: 3px 5px;
+          }
+        }
+      }
+      ._list._batch2 {
+        ._items {
+          width: auto;
+        }
+        strong {
+          font-size: 14px;
+          color: #5d5d5d;
+        }
+        small {
+          color: #3c3c3c;
+          span {
+            &:before {
+              content: '|';
+              margin: 0 5px;
+              color: #00000029;
+            }
+          }
+        }
+      }
+    }
+    .gridPanel:last-child {
+      border-right: 0px;
+    }
+  }
+
+
+}
+
+.Gridpanel2 {
+  .gridPan-Bg {
+    .gridArrow-collapse {
+      display: block;
+    }
+    .collapse:not(.show)  {
+      display: none;
+    }
+  }
+
+  .gridPanel__group {
+    &._batch2 {
+      display: flex;
+    }
+  }
+}
+
+.aborted {
+  .gridPan-Bg {
+    border: 2px solid #E65F58;
+
+    .aborted-status-show.d-none {
+      display: block !important;
+    }
+  }
+}
